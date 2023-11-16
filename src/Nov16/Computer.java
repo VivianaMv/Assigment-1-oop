@@ -11,10 +11,11 @@ public class Computer {
 	
 	private static int numOfComputer = 0;
 	private static long serialnumcounter = 100000;
+	private static String equals =   
 	
 	private String brand;
 	private String model;
-	private long sn;
+	private long serialnum;
 	private double price;
 
 
@@ -25,7 +26,7 @@ public class Computer {
 		brand = b;
 		model = m;
 		price = p;
-		sn = serialnumcounter;
+		serialnum = serialnumcounter;
 		serialnumcounter++;		
 		numOfComputer++;
 	}
@@ -50,7 +51,7 @@ public class Computer {
 		return sn;
 	}
 	public void setSn(long s) {
-		sn = s;
+		serialnum = s;
 	}	
 		public double getPrice() {
 			return price;
@@ -64,10 +65,18 @@ public class Computer {
 		public String toString() {
 			System.out.println("The brand of the computer is: " + brand);
 			System.out.println("The model : " + model);
-			System.out.println("The SN: " + sn);
 			System.out.println("The price is: " + price);
+			System.out.println("The SN: " + serialnum);
 			
-			return "Computer [brand=" + brand + ", model=" + model + ", sn=" + sn + ", price=" + price + "]";
+			return "Computer [brand=" + brand + ", model=" + model + ", sn=" + serialnum + ", price=" + price + "]";
 		}	
+		
+		public boolean equals(Computer c) {
+			if(brand == c.brand && model == c.model && price == c.price ) {
+				return true;
+			}else {
+				return false; 
+			}
+		}
 }	
 
