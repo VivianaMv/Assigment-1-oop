@@ -3,7 +3,7 @@ package Nov16;
 //
 // Assignment 421 20%:
 //© Your Name: Viviana Montoya Velez
-//Written by: Viviana Montoya Velez, student id 2395170)
+//Written by: Viviana Montoya Velez, student id 2395170
 //
 
 
@@ -11,7 +11,7 @@ public class Computer {
 	
 	private static int numOfComputer = 0;
 	private static long serialnumcounter = 100000;
-	private static String equals =   
+	
 	
 	private String brand;
 	private String model;
@@ -48,7 +48,7 @@ public class Computer {
 	}
 	
 	public long getSn() {
-		return sn;
+		return serialnum;
 	}
 	public void setSn(long s) {
 		serialnum = s;
