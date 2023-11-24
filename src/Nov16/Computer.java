@@ -60,7 +60,7 @@ public class Computer {
 			price = p;
 		}
 
-// Hint: toString() method ==> go to source + Generate toString()		
+// Hint: toString() method ==> right click + go to source + Generate toString()		
 		@Override
 		public String toString() {
 			System.out.println("The brand of the computer is: " + brand);
